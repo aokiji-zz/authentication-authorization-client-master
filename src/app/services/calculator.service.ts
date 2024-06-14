@@ -8,7 +8,6 @@ export const calculatorAPI = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'http://localhost:3001/calculator',
     prepareHeaders: (headers, { getState }) => {
-      console.log('israel', (getState() as RootState).authReducer)
       const { access_token } = (getState() as RootState).authReducer
       console.log('calculatorAPI:: prepareHeaders access_token:', access_token)
       if (access_token) {
