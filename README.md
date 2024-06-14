@@ -1,5 +1,5 @@
-//Init
-yarn
+//Init\n
+yarn\n
 yarn start
 
 //Login
